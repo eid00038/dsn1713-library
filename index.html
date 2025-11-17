@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Big Bite Donuts</title>
+  <!-- AOS (Animate On Scroll) library CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a id="logo" href="#">
+        <img src="images/big-bite-donuts-logo.png" alt="Big Bite Donut logo"/></a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a class="nav-btn" href="#">About</a></li>
+          <li><a class="nav-btn" href="#">Shop</a></li>
+          <li><a class="nav-btn" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <!-- Feature 1: fades the hero heading up when the page loads -->
+        <h1 data-aos="fade-up" data-aos-duration="1200">Donuts over Everything</h1>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <!-- Feature 2: slides Best Sellers heading in from the left on scroll -->
+        <h2 data-aos="fade-right" data-aos-easing="ease-out-cubic">Best Sellers</h2>
+
+        <div class="product-grid">
+
+          <!-- Feature 3a: zoom-in animation on product card -->
+          <article class="product-card product-1" data-aos="zoom-in" data-aos-delay="0">
+            <img src="images/pink-donut-sprinkles.png" alt="Plain donut with pink icing and colourful sprinkles"/>
+            <h3>Pinky Berry</h3>
+            <p class="product-desc">Description of donut 1 goes here</p>
+            <p class="price">$4.50</p>
+            <button class="cta-btn">Add to Cart</button>
+          </article>
+
+          <!-- Feature 3b: same zoom-in animation, delayed -->
+          <article class="product-card product-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="images/chocolate-donut-drizzle-chips.png" alt="Chocolate donut with drizzle and chips"/>
+            <h3>Choco Crunch</h3>
+            <p class="product-desc">Description of donut 2 goes here which might be a bit longer</p>
+            <p class="price">$4.50</p>
+            <button class="cta-btn">Add to Cart</button>
+          </article>
+
+          <!-- Feature 3c: same zoom-in animation, increased delay -->
+          <article class="product-card product-3" data-aos="zoom-in" data-aos-delay="300">
+            <img src="images/chocolate-donut-sprinkles.png" alt="Chocolate donut with sprinkles"/>
+            <h3>Choco Sprink</h3>
+            <p class="product-desc">Description of donut 3 goes here and is much longer forcing content below down further</p>
+            <p class="price">$4.50</p>
+            <button class="cta-btn">Add to Cart</button>
+          </article>
+
+          <!-- Feature 3d: same zoom-in animation, longest delay -->
+          <article class="product-card product-4" data-aos="zoom-in" data-aos-delay="450">
+            <img src="images/pink-chocolate-donut-sprinkles.png" alt="Pink and chocolate donut with sprinkles"/>
+            <h3>Cherry Delux</h3>
+            <p class="product-desc">Description of Product 4 goes here</p>
+            <p class="price">$4.50</p>
+            <button class="cta-btn">Add to Cart</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Big Bite Donuts 2024</p>
+  </footer>
+
+  <!-- AOS JavaScript file -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Initializes AOS once, animations run only the first time the element scrolls into view, for 800 milliseconds -->
+  <script>
+    AOS.init({once: true, duration: 800});
+  </script>
+
+</body>
+</html>
